@@ -1,0 +1,22 @@
+{
+  "name": "node_crash_course",
+  "version": "1.0.0",
+  "description": "Coursework from the video",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/avophile/LUT_FullStack_2021_Doug_Locklin.git"
+  },
+  "author": "Doug Locklin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/avophile/LUT_FullStack_2021_Doug_Locklin/issues"
+  },
+  "homepage": "https://github.com/avophile/LUT_FullStack_2021_Doug_Locklin#readme",
+  "dependencies": {
+    "uuid": "^8.3.2"
+  }
+}
