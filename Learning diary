@@ -1,1 +1,14 @@
+Notes on Node.js segment:
+Node.js is a runtime written in C++.
+Do I need to know C++ to be an expert in Node.js? 
 
+Runtime vs. framework
+What is a runtime?
+
+https://en.wikipedia.org/wiki/Runtime_system?wprov=sfti1
+
+https://stackoverflow.com/questions/3900549/what-is-runtime
+
+https://www.google.com/amp/s/www.freecodecamp.org/news/what-exactly-is-node-js-ae36e97449f5/amp/
+
+https://youtu.be/8aGhZQkoFbQ
