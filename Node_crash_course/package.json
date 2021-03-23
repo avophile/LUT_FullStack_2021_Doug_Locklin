@@ -18,5 +18,8 @@
   "homepage": "https://github.com/avophile/LUT_FullStack_2021_Doug_Locklin#readme",
   "dependencies": {
     "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
   }
 }
