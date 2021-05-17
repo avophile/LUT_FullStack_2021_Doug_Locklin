@@ -1,4 +1,9 @@
-Notes on Node.js segment:
+Notes on Node.js Crash course segment:
+
+Objective: 
+
+You will learn Node.js fundamentals including modules such as path, url, fs, events. 
+Additionally you'll create an HTTP server from scratch without Express and deploy it to Heroku.
 
 Node.js is a JavaScript runtime written in C++.
 Do I need to know C++ to be an expert in Node.js? 
@@ -38,8 +43,19 @@ Non-blocking I/O
 Asynchronous non-blocking on a single thread capable of holding 10s of thousands of connections hedl in the event loop
 optomizing throughput and scalabilty
 Not goood for CPU intensive apps
+good for reL TIMWE SERVICES, cruD apPSS
+tOOLS AND UTLITIES
 
 Event or process triggers an event or process
 Firing a callback
 Events run in the loop 
 triggers 
+
+NPM installs third party packages as dependencies: frameworks, libraries, other tools
+
+Node commands:
+npm init
+npm install express
+npm install -g nodemon (installs globally)
+
+REPL read eval print loop allows Javasctipt to work in terminal 
