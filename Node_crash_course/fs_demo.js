@@ -1,3 +1,5 @@
+// things we can do with the node fs module
+
 const fs = require('fs');
 const path = require('path');
 
