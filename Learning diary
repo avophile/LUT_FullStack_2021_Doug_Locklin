@@ -1,9 +1,14 @@
 Notes on Node.js segment:
-Node.js is a runtime written in C++.
+
+Node.js is a JavaScript runtime written in C++.
 Do I need to know C++ to be an expert in Node.js? 
+
+It runs on your machine as a service or a runtime, not in the browser. 
 
 Runtime vs. framework
 What is a runtime?
+
+Resources consulted:
 
 https://en.wikipedia.org/wiki/Runtime_system?wprov=sfti1
 
@@ -12,3 +17,29 @@ https://stackoverflow.com/questions/3900549/what-is-runtime
 https://www.google.com/amp/s/www.freecodecamp.org/news/what-exactly-is-node-js-ae36e97449f5/amp/
 
 https://youtu.be/8aGhZQkoFbQ
+
+Allows JavaScript able to run on the server.
+
+Node.js suggested precursors:
+
+HTTP (status codes, headers, etc.) 
+JSON (for when Node is used for REST APIs and microservices)
+Arrow Functions, Promises -> ES6+ (ECMAScript is a standard that web browsers follow while interpreting Javascript.)
+Model View Controller (MVC) Pattern
+
+WHY USE NODE?
+
+Fast, efficient and highly scalable
+Event driven, runs on a single loop, has a non-blocking I/O model
+Popular with startups 
+Same language on both ends when used with JavaScript frameworks like React Vue Angular
+
+Non-blocking I/O
+Asynchronous non-blocking on a single thread capable of holding 10s of thousands of connections hedl in the event loop
+optomizing throughput and scalabilty
+Not goood for CPU intensive apps
+
+Event or process triggers an event or process
+Firing a callback
+Events run in the loop 
+triggers 
