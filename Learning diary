@@ -59,3 +59,5 @@ npm install express
 npm install -g nodemon (installs globally)
 
 REPL read eval print loop allows Javasctipt to work in terminal 
+
+Notes from the demo in the video are included in the Node_Crash_Course folder.
