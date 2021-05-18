@@ -90,9 +90,21 @@ Notes from the demo in the video are included in the Node_Crash_Course folder.
 
 Note: to make demo work we have to revert to Node v. 12
 
+**Event loop*
 
+In general, in most browsers there is an event loop for every browser tab, to make every process isolated and avoid a web page with infinite loops or heavy processing to block your entire browser.
 
+The environment manages multiple concurrent event loops, to handle API calls for example. Web Workers run in their own event loop as well.
 
+You mainly need to be concerned that your code will run on a single event loop, and write code with this thing in mind to avoid blocking it.
+
+**The call stack**
+
+The call stack is a LIFO (Last In, First Out) stack.
+
+The event loop continuously checks the call stack to see if there's any function that needs to run.
+
+While doing so, it adds any function call it finds to the call stack and executes each one in order.
 
 
 
