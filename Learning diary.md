@@ -19,7 +19,7 @@ Q: Do I need to know C++ to be an expert in Node.js?
 It runs on your machine as a service or a runtime, not in the browser. 
 
 
-###Runtime vs. framework <a name="runvsframe"></a>
+### Runtime vs. framework <a name="runvsframe"></a>
 What is a runtime?
 
 Resources consulted:
@@ -34,7 +34,7 @@ https://youtu.be/8aGhZQkoFbQ
 
 Allows JavaScript to run on the server.
 
-##Node.js suggested precursors<a name="nodecrashprecursors"></a>
+## Node.js suggested precursors <a name="nodecrashprecursors"></a>
 
 HTTP (status codes, headers, etc.) 
 JSON (for when Node is used for REST APIs and microservices)
