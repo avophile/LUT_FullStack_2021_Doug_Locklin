@@ -106,7 +106,7 @@ Note: to make demo work we have to revert to Node v. 12
 
 
 
-
+**Asynchronous**
 
 How to defer a function until the stack is clear:
 
@@ -121,3 +121,7 @@ The loop gives priority to the call stack, and it first processes everything it 
 
 We don't have to wait for functions like setTimeout, fetch or other things to do their own work, because they are provided by the browser, and they live on their own threads. 
 For example, if you set the setTimeout timeout to 2 seconds, you don't have to wait 2 seconds - the wait happens elsewhere.
+
+ECMAScript 2015 introduced the concept of the Job Queue, which is used by Promises (also introduced in ES6/ES2015). It's a way to execute the result of an async function as soon as possible, rather than being put at the end of the call stack.
+
+Promises that resolve before the current function ends will be executed right after the current function.
