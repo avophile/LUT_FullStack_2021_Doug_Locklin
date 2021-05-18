@@ -2,12 +2,12 @@
 
 # Table of contents
 1. [Objective](#objective)
-    1. [Runtime vs. framework] (#runvsframe)
+    1. [Runtime vs. framework](#runvsframe)
 3. [Node.js Crash Course suggested precursors](#nodecrashprecursors)
     1. [Suggested JavaScript precursors in Node docs](#nodedocsprecursors)
     2. [Asyncronous concepts](#asyncronous)
-4. [Why Use Node?] (#why)
-    1. [Non-blocking I/O] (#nonblock)
+4. [Why Use Node?](#why)
+    1. [Non-blocking I/O](#nonblock)
 
 ##Objective <a name="objective"></a>
 You will learn Node.js fundamentals including modules such as path, url, fs, events. 
