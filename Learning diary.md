@@ -1,4 +1,4 @@
-#Notes on Node.js Crash course segment:
+# Notes on Node.js Crash course segment:
 
 **Objective:**
 You will learn Node.js fundamentals including modules such as path, url, fs, events. 
