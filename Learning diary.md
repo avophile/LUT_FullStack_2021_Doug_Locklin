@@ -1,6 +1,15 @@
-# Notes on Node.js Crash course segment:
+# Notes on Node.js Crash course segment
 
-**Objective:**
+# Table of contents
+1. [Objective](#objective)
+    1. [Runtime vs. framework] (#runvsframe)
+3. [Node.js Crash Course suggested precursors](#nodecrashprecursors)
+    1. [Suggested JavaScript precursors in Node docs](#nodedocsprecursors)
+    2. [Asyncronous concepts](#asyncronous)
+4. [Why Use Node?] (#why)
+    1. [Non-blocking I/O] (#nonblock)
+
+##Objective <a name="objective"></a>
 You will learn Node.js fundamentals including modules such as path, url, fs, events. 
 Additionally you'll create an HTTP server from scratch without Express and deploy it to Heroku.
 
@@ -10,7 +19,7 @@ Q: Do I need to know C++ to be an expert in Node.js?
 It runs on your machine as a service or a runtime, not in the browser. 
 
 
-Runtime vs. framework
+###Runtime vs. framework <a name="runvsframe"></a>
 What is a runtime?
 
 Resources consulted:
@@ -25,14 +34,14 @@ https://youtu.be/8aGhZQkoFbQ
 
 Allows JavaScript to run on the server.
 
-**Node.js suggested precursors:**
+##Node.js suggested precursors<a name="nodecrashprecursors"></a>
 
 HTTP (status codes, headers, etc.) 
 JSON (for when Node is used for REST APIs and microservices)
 Arrow Functions, Promises -> ES6+ (ECMAScript is a standard that web browsers follow while interpreting Javascript.)
 Model View Controller (MVC) Pattern
 
-**Suggested JavaScript precursors in Node docs:**
+###Suggested JavaScript precursors in Node docs <a name="#nodedocsprecursor"></a>
 
 Lexical Structure
 Expressions
@@ -49,7 +58,7 @@ Semicolons
 Strict Mode
 ECMAScript 6, 2016, 2017
 
-**Also, know these asyncronous concepts:**
+##Also, know these asyncronous concepts <a name="#asyncronous"></a>
 
 Asynchronous programming and callbacks
 Timers
@@ -58,19 +67,18 @@ Async and Await
 Closures
 The Event Loop
 
-WHY USE NODE?
+##WHY USE NODE? <a name="#why"></a>
 
 Fast, efficient and highly scalable
 Event driven, runs on a single thread (loop?), has a non-blocking I/O model
 Popular with startups 
 Same language on both front and back ends when used with JavaScript frameworks like React Vue Angular
 
-Non-blocking I/O
+###Non-blocking I/O <a name="#nonblock"></a>
 Asynchronous non-blocking on a single thread capable of holding 10s of thousands of connections hedl in the event loop
 optomizing throughput and scalabilty
 Not goood for CPU intensive apps
-good for reL TIMWE SERVICES, cruD apPSS
-tOOLS AND UTLITIES
+good for real time services, CRUD apps, tools and utilities
 
 Event or process triggers an event or process
 Firing a callback
