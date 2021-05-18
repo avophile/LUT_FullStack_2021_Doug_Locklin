@@ -9,7 +9,7 @@ Q: Do I need to know C++ to be an expert in Node.js?
 
 It runs on your machine as a service or a runtime, not in the browser. 
 
-/*
+
 Runtime vs. framework
 What is a runtime?
 
@@ -22,7 +22,7 @@ https://stackoverflow.com/questions/3900549/what-is-runtime
 https://www.google.com/amp/s/www.freecodecamp.org/news/what-exactly-is-node-js-ae36e97449f5/amp/
 
 https://youtu.be/8aGhZQkoFbQ
-*/
+
 Allows JavaScript to run on the server.
 
 **Node.js suggested precursors:**
