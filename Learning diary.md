@@ -2,9 +2,10 @@
 
 # Table of contents <a name="top"></a>
 1. [Objective](#objective)
-2. [Node.js Crash Course suggested precursors](#nodecrashprecursors)
-    1. [Suggested JavaScript precursors in Node docs](#nodedocsprecursors)
-    2. [Asyncronous concepts](#asynchronous)
+2. [Precursors](#precursors)
+    1. [Node.js Crash Course suggested precursors](#nodecrashprecursors)
+    2. [Suggested JavaScript precursors in Node docs](#nodedocsprecursors)
+    3. [Asyncronous concepts](#asynchronous)
 3. [Why Use Node?](#why)
 4. [Node.js features](#features)
     1. [Runtime vs. framework](#runvsframe)
@@ -28,7 +29,10 @@ Q: Do I need to know C++ to be an expert in Node.js?
 It runs on your machine as a service or a runtime, not in the browser. 
 
 
-## Node.js suggested precursors <a name="nodecrashprecursors"></a>
+## Precursors <a name="precursors"></a>
+[back to top](#top)
+
+### Node.js Crash Course suggested precursors <a name="nodecrashprecursors"></a>
 [back to top](#top)
 
 * HTTP (status codes, headers, etc.) 
