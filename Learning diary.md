@@ -41,7 +41,7 @@ JSON (for when Node is used for REST APIs and microservices)
 Arrow Functions, Promises -> ES6+ (ECMAScript is a standard that web browsers follow while interpreting Javascript.)
 Model View Controller (MVC) Pattern
 
-###Suggested JavaScript precursors in Node docs <a name="#nodedocsprecursor"></a>
+### Suggested JavaScript precursors in Node docs <a name="#nodedocsprecursor"></a>
 
 Lexical Structure
 Expressions
@@ -58,7 +58,7 @@ Semicolons
 Strict Mode
 ECMAScript 6, 2016, 2017
 
-##Also, know these asyncronous concepts <a name="#asyncronous"></a>
+## Also, know these asyncronous concepts <a name="#asyncronous"></a>
 
 Asynchronous programming and callbacks
 Timers
@@ -67,14 +67,14 @@ Async and Await
 Closures
 The Event Loop
 
-##WHY USE NODE? <a name="#why"></a>
+## Why use Node.js? <a name="#why"></a>
 
 Fast, efficient and highly scalable
 Event driven, runs on a single thread (loop?), has a non-blocking I/O model
 Popular with startups 
 Same language on both front and back ends when used with JavaScript frameworks like React Vue Angular
 
-###Non-blocking I/O <a name="#nonblock"></a>
+### Non-blocking I/O <a name="#nonblock"></a>
 Asynchronous non-blocking on a single thread capable of holding 10s of thousands of connections hedl in the event loop
 optomizing throughput and scalabilty
 Not goood for CPU intensive apps
