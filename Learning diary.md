@@ -2,19 +2,19 @@
 
 # Table of contents
 1. [Objective](#objective)
-    1. [Runtime vs. framework](#runvsframe)
 2. [Node.js Crash Course suggested precursors](#nodecrashprecursors)
     1. [Suggested JavaScript precursors in Node docs](#nodedocsprecursors)
     2. [Asyncronous concepts](#asynchronous)
 3. [Why Use Node?](#why)
 4. [Node.js features](#features)
-    1. [Non-blocking I/O](#nonblock)
-    2. [Node Package Manager](#npm)
-    3. [The Event Loop](#eventloop)
-    4. [The Call Stack](#callstack)
-    5. [Asynchronous](#asynchronous)
-    6. [Message Queue](#messagequeue")
-    7. [Job Queue](#jobqueue")
+    1. [Runtime vs. framework](#runvsframe)
+    2. [Non-blocking I/O](#nonblock)
+    3. [Node Package Manager](#npm)
+    4. [The Event Loop](#eventloop)
+    5. [The Call Stack](#callstack)
+    6. [Asynchronous](#asynchronous)
+    7. [Message Queue](#messagequeue")
+    8. [Job Queue](#jobqueue")
 
 ## Objective <a name="objective"></a>
 You will learn Node.js fundamentals including modules such as path, url, fs, events. 
@@ -25,21 +25,6 @@ Q: Do I need to know C++ to be an expert in Node.js?
 
 It runs on your machine as a service or a runtime, not in the browser. 
 
-
-### Runtime vs. framework <a name="runvsframe"></a>
-What is a runtime?
-
-Resources consulted:
-
-https://en.wikipedia.org/wiki/Runtime_system?wprov=sfti1
-
-https://stackoverflow.com/questions/3900549/what-is-runtime
-
-https://www.google.com/amp/s/www.freecodecamp.org/news/what-exactly-is-node-js-ae36e97449f5/amp/
-
-https://youtu.be/8aGhZQkoFbQ
-
-Allows JavaScript to run on the server.
 
 ## Node.js suggested precursors <a name="nodecrashprecursors"></a>
 
@@ -82,6 +67,21 @@ Popular with startups
 Same language on both front and back ends when used with JavaScript frameworks like React Vue Angular
 
 ## Node.js features <a name="#features"></a>
+
+### Runtime vs. framework <a name="runvsframe"></a>
+What is a runtime?
+
+Resources consulted:
+
+https://en.wikipedia.org/wiki/Runtime_system?wprov=sfti1
+
+https://stackoverflow.com/questions/3900549/what-is-runtime
+
+https://www.google.com/amp/s/www.freecodecamp.org/news/what-exactly-is-node-js-ae36e97449f5/amp/
+
+https://youtu.be/8aGhZQkoFbQ
+
+Allows JavaScript to run on the server.
 
 ### Non-blocking I/O <a name="#nonblock"></a>
 Asynchronous non-blocking on a single thread capable of holding 10s of thousands of connections hedl in the event loop
