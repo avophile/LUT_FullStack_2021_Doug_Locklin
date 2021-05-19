@@ -9,7 +9,7 @@
 4. [Why Use Node?](#why)
     1. [Non-blocking I/O](#nonblock)
 
-##Objective <a name="objective"></a>
+## Objective <a name="objective"></a>
 You will learn Node.js fundamentals including modules such as path, url, fs, events. 
 Additionally you'll create an HTTP server from scratch without Express and deploy it to Heroku.
 
