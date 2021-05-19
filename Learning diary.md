@@ -107,7 +107,7 @@ Firing a callback
 Events run in the loop 
 triggers 
 
-### Node Package Manager NPM <a name="npm"></a> 
+### Node Package Manager [NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) <a name="npm"></a> 
 [back to top](#top)
 
 NPM installs third party packages as dependencies: frameworks, libraries, other tools
