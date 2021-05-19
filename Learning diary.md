@@ -40,7 +40,7 @@ It runs on your machine as a service or a runtime, not in the browser.
 * Arrow Functions, Promises -> ES6+ (ECMAScript is a standard that web browsers follow while interpreting Javascript.)
 * Model View Controller (MVC) Pattern
 
-### Suggested JavaScript precursors in Node docs <a name="nodedocsprecursors"></a>
+### Suggested JavaScript precursors in [Node docs](https://nodejs.dev/learn/how-much-javascript-do-you-need-to-know-to-use-nodejs) <a name="nodedocsprecursors"></a>
 [back to top](#top)
 
 * Lexical Structure
