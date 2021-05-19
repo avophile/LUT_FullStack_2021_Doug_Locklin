@@ -10,8 +10,9 @@
 5. [Node.js features](#features)
     1. [Non-blocking I/O](#nonblock)
     2. [Node Package Manager](#npm)
-    3. [Message Queue](#messagequeue")
-    4. [Job Queue](#jobqueue")
+    3. [Asynchronous](#asynchronous)
+    4. [Message Queue](#messagequeue")
+    5. [Job Queue](#jobqueue")
 
 ## Objective <a name="objective"></a>
 You will learn Node.js fundamentals including modules such as path, url, fs, events. 
