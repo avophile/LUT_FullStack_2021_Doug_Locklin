@@ -84,11 +84,12 @@ https://youtu.be/8aGhZQkoFbQ
 Allows JavaScript to run on the server.
 
 ### Non-blocking I/O <a name="nonblock"></a>
-Asynchronous non-blocking on a single thread capable of holding 10s of thousands of connections hedl in the event loop
-optomizing throughput and scalabilty
-Not goood for CPU intensive apps
-good for real time services, CRUD apps, tools and utilities
+- Asynchronous non-blocking on a single thread capable of holding 10s of thousands of connections held in the event loop
+- Optimizes throughput and scalabilty
+- Not goood for CPU intensive apps
+- Good for real time services, CRUD apps, tools and utilities
 
+*How it works:*
 Event or process triggers an event or process
 Firing a callback
 Events run in the loop 
