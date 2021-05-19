@@ -48,12 +48,12 @@ It runs on your machine as a service or a runtime, not in the browser.
 * Types
 * Variables
 * Functions
-* this
-* Arrow Functions
+* [this](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this)
+* [Arrow Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
 * Loops
-* Scopes
+* [Scopes](https://developer.mozilla.org/en-US/docs/Glossary/Scope)
 * Arrays
-* Template Literals
+* [Template Literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)
 * Semicolons
 * Strict Mode
 * ECMAScript 6, 2016, 2017
