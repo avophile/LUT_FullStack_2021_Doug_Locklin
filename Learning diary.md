@@ -58,7 +58,7 @@ Semicolons
 Strict Mode
 ECMAScript 6, 2016, 2017
 
-## Also, know these asyncronous concepts <a name="#asyncronous"></a>
+### Also, know these asyncronous concepts <a name="#asyncronous"></a>
 
 Asynchronous programming and callbacks
 Timers
