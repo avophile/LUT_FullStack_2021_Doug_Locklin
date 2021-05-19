@@ -18,6 +18,7 @@
 
 ## Objective <a name="objective"></a> 
 [back to top](#top)
+
 You will learn Node.js fundamentals including modules such as path, url, fs, events. 
 Additionally you'll create an HTTP server from scratch without Express and deploy it to Heroku.
 
@@ -144,6 +145,7 @@ The use case of setTimeout(() => {}, 0) is to call a function, but execute it on
 
 ### The Message Queue <a name="messagequeue"></a>
 [back to top](#top)
+
 When setTimeout() is called, the Browser or Node.js starts the timer. Once the timer expires, in this case immediately as we put 0 as the timeout, the callback function is put in the Message Queue.
 
 The Message Queue is also where user-initiated events like click or keyboard events, or fetch responses are queued before your code has the opportunity to react to them. Or also DOM events like onLoad.
