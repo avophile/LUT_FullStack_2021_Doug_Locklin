@@ -123,6 +123,8 @@ Notes from the demo in the video are included in the Node_Crash_Course folder.
 
 **Note: to make demo work we have to revert to Node v. 12**
 
+See also: [Yarn](https://yarnpkg.com/getting-started)
+
 ### [Event loop](https://nodejs.dev/learn/the-nodejs-event-loop) <a name="eventloop"></a>
 
 In general, in most browsers there is an event loop for every browser tab, to make every process isolated and avoid a web page with infinite loops or heavy processing to block your entire browser.
