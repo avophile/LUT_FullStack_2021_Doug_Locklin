@@ -21,7 +21,7 @@
 [back to top](#top)
 
 You will learn Node.js fundamentals including modules such as path, url, fs, events. 
-Additionally you'll create an HTTP server from scratch without Express and deploy it to Heroku.
+Additionally you'll create an HTTP server from scratch without Express and deploy it to [Heroku](https://www.heroku.com/).
 
 Node.js is a JavaScript runtime environment written in C++.
 Q: Do I need to know C++ to be an expert in Node.js? 
