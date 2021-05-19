@@ -13,8 +13,8 @@
     4. [The Event Loop](#eventloop)
     5. [The Call Stack](#callstack)
     6. [Asynchronous](#asynchronous)
-    7. [Message Queue](#messagequeue")
-    8. [Job Queue](#jobqueue")
+    7. [Message Queue](#messagequeue)
+    8. [Job Queue](#jobqueue)
 
 ## Objective <a name="objective"></a>
 You will learn Node.js fundamentals including modules such as path, url, fs, events. 
