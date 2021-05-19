@@ -4,7 +4,7 @@
 1. [Objective](#objective)
     1. [Runtime vs. framework](#runvsframe)
 2. [Node.js Crash Course suggested precursors](#nodecrashprecursors)
-    1. [Suggested JavaScript precursors in Node docs](#nodedocsprecursor)
+    1. [Suggested JavaScript precursors in Node docs](#nodedocsprecursors)
     2. [Asyncronous concepts](#asynchronous)
 3. [Why Use Node?](#why)
 4. [Node.js features](#features)
@@ -48,7 +48,7 @@ Allows JavaScript to run on the server.
 *Arrow Functions, Promises -> ES6+ (ECMAScript is a standard that web browsers follow while interpreting Javascript.)
 *Model View Controller (MVC) Pattern
 
-### Suggested JavaScript precursors in Node docs <a name="#nodedocsprecursor"></a>
+### Suggested JavaScript precursors in Node docs <a name="#nodedocsprecursors"></a>
 
 *Lexical Structure
 *Expressions
