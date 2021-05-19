@@ -24,10 +24,10 @@ You will learn Node.js fundamentals including modules such as [Path](https://nod
 Additionally you'll create an HTTP server from scratch without Express and deploy it to [Heroku](https://www.heroku.com/).
 
 Node.js is a JavaScript runtime environment written in C++.
+
 Q: Do I need to know C++ to be an expert in Node.js? 
 
 It runs on your machine as a service or a runtime, not in the browser. 
-
 
 ## Precursors <a name="precursors"></a>
 [back to top](#top)
@@ -102,15 +102,15 @@ Allows JavaScript to run on the server.
 - Good for real time services, CRUD apps, tools and utilities
 
 **How it works:**
-Event or process triggers an event or process
-Firing a callback
-Events run in the loop 
-triggers 
+- Event or process triggers an event or process
+- Firing a callback
+- Events run in the loop 
+- triggers 
 
 ### Node Package Manager [NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) <a name="npm"></a> 
 [back to top](#top)
 
-NPM installs third party packages as dependencies: frameworks, libraries, other tools
+NPM installs third party packages as dependencies: frameworks, libraries, other tools.
 
 Node commands:
 - npm init
