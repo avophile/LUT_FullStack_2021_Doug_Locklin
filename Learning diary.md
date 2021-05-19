@@ -36,36 +36,36 @@ Allows JavaScript to run on the server.
 
 ## Node.js suggested precursors <a name="nodecrashprecursors"></a>
 
-HTTP (status codes, headers, etc.) 
-JSON (for when Node is used for REST APIs and microservices)
-Arrow Functions, Promises -> ES6+ (ECMAScript is a standard that web browsers follow while interpreting Javascript.)
-Model View Controller (MVC) Pattern
+*HTTP (status codes, headers, etc.) 
+*JSON (for when Node is used for REST APIs and microservices)
+*Arrow Functions, Promises -> ES6+ (ECMAScript is a standard that web browsers follow while interpreting Javascript.)
+*Model View Controller (MVC) Pattern
 
 ### Suggested JavaScript precursors in Node docs <a name="#nodedocsprecursor"></a>
 
-Lexical Structure
-Expressions
-Types
-Variables
-Functions
-this
-Arrow Functions
-Loops
-Scopes
-Arrays
-Template Literals
-Semicolons
-Strict Mode
-ECMAScript 6, 2016, 2017
+*Lexical Structure
+*Expressions
+*Types
+*Variables
+*Functions
+*this
+*Arrow Functions
+*Loops
+*Scopes
+*Arrays
+*Template Literals
+*Semicolons
+*Strict Mode
+*ECMAScript 6, 2016, 2017
 
 ### Also, know these asyncronous concepts <a name="#asyncronous"></a>
 
-Asynchronous programming and callbacks
-Timers
-Promises
-Async and Await
-Closures
-The Event Loop
+*Asynchronous programming and callbacks
+*Timers
+*Promises
+*Async and Await
+*Closures
+*The Event Loop
 
 ## Why use Node.js? <a name="#why"></a>
 
