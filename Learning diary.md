@@ -7,7 +7,11 @@
     1. [Suggested JavaScript precursors in Node docs](#nodedocsprecursors)
     2. [Asyncronous concepts](#asyncronous)
 4. [Why Use Node?](#why)
+5. [Node.js features](#features)
     1. [Non-blocking I/O](#nonblock)
+    2. [Node Package Manager](#npm)
+    3. [Message Queue](#messagequeue")
+    4. [Job Queue](#jobqueue")
 
 ## Objective <a name="objective"></a>
 You will learn Node.js fundamentals including modules such as path, url, fs, events. 
@@ -74,6 +78,8 @@ Event driven, runs on a single thread (loop?), has a non-blocking I/O model
 Popular with startups 
 Same language on both front and back ends when used with JavaScript frameworks like React Vue Angular
 
+## Node.js features <a name="#features"></a>
+
 ### Non-blocking I/O <a name="#nonblock"></a>
 Asynchronous non-blocking on a single thread capable of holding 10s of thousands of connections hedl in the event loop
 optomizing throughput and scalabilty
@@ -84,6 +90,8 @@ Event or process triggers an event or process
 Firing a callback
 Events run in the loop 
 triggers 
+
+### Node Package Manager NPM <a name="#npm"></a>
 
 NPM installs third party packages as dependencies: frameworks, libraries, other tools
 
@@ -98,7 +106,7 @@ Notes from the demo in the video are included in the Node_Crash_Course folder.
 
 Note: to make demo work we have to revert to Node v. 12
 
-### Event loop
+### Event loop <a name="#eventloop"></a>
 
 In general, in most browsers there is an event loop for every browser tab, to make every process isolated and avoid a web page with infinite loops or heavy processing to block your entire browser.
 
@@ -106,7 +114,7 @@ The environment manages multiple concurrent event loops, to handle API calls for
 
 You mainly need to be concerned that your code will run on a single event loop, and write code with this thing in mind to avoid blocking it.
 
-### The call stack
+### The call stack <a name="#callstack"></a>
 
 The call stack is a LIFO (Last In, First Out) stack.
 
@@ -114,13 +122,13 @@ The event loop continuously checks the call stack to see if there's any function
 
 While doing so, it adds any function call it finds to the call stack and executes each one in order.
 
-### Asynchronous
+### Asynchronous <a name="#asynchronous"></a>
 
 How to defer a function until the stack is clear:
 
 The use case of setTimeout(() => {}, 0) is to call a function, but execute it once every other function in the code has executed.
 
-### The Message Queue
+### The Message Queue <a name="#messagequeue"></a>
 When setTimeout() is called, the Browser or Node.js starts the timer. Once the timer expires, in this case immediately as we put 0 as the timeout, the callback function is put in the Message Queue.
 
 The Message Queue is also where user-initiated events like click or keyboard events, or fetch responses are queued before your code has the opportunity to react to them. Or also DOM events like onLoad.
@@ -130,7 +138,7 @@ The loop gives priority to the call stack, and it first processes everything it 
 We don't have to wait for functions like setTimeout, fetch or other things to do their own work, because they are provided by the browser, and they live on their own threads. 
 For example, if you set the setTimeout timeout to 2 seconds, you don't have to wait 2 seconds - the wait happens elsewhere.
 
-### Job Queue
+### Job Queue <a name="#jobqueue"></a>
 
 ECMAScript 2015 introduced the concept of the Job Queue, which is used by Promises (also introduced in ES6/ES2015). It's a way to execute the result of an async function as soon as possible, rather than being put at the end of the call stack.
 
