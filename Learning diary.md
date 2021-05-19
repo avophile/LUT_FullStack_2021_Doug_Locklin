@@ -58,14 +58,14 @@ It runs on your machine as a service or a runtime, not in the browser.
 * Strict Mode
 * ECMAScript 6, 2016, 2017
 
-### Also, know these asyncronous concepts <a name="asyncronous"></a>
+### Asyncronous concepts <a name="asyncronous"></a>
 [back to top](#top)
 
 * Asynchronous programming and callbacks
 * Timers
-* Promises
+* [Promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
 * [Async and Await](https://nodejs.dev/learn/modern-asynchronous-javascript-with-async-and-await)
-* Closures
+* [Closures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)
 * The Event Loop
 
 ## Why use Node.js? <a name="why"></a>
