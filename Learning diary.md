@@ -101,7 +101,7 @@ Allows JavaScript to run on the server.
 - Not goood for CPU intensive apps
 - Good for real time services, CRUD apps, tools and utilities
 
-*How it works:*
+**How it works:**
 Event or process triggers an event or process
 Firing a callback
 Events run in the loop 
@@ -113,15 +113,15 @@ triggers
 NPM installs third party packages as dependencies: frameworks, libraries, other tools
 
 Node commands:
-npm init
-npm install express
-npm install -g nodemon (installs globally)
+- npm init
+- npm install express
+- npm install -g nodemon (installs globally)
 
-REPL read eval print loop allows Javasctipt to work in terminal 
+REPL (read eval print loop) allows Javascript to work in terminal 
 
 Notes from the demo in the video are included in the Node_Crash_Course folder.
 
-Note: to make demo work we have to revert to Node v. 12
+**Note: to make demo work we have to revert to Node v. 12**
 
 ### [Event loop](https://nodejs.dev/learn/the-nodejs-event-loop) <a name="eventloop"></a>
 
