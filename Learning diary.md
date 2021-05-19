@@ -1,6 +1,6 @@
 # Notes on Node.js Crash course segment
 
-# Table of contents
+# Table of contents <a name="top"></a>
 1. [Objective](#objective)
 2. [Node.js Crash Course suggested precursors](#nodecrashprecursors)
     1. [Suggested JavaScript precursors in Node docs](#nodedocsprecursors)
@@ -16,7 +16,7 @@
     7. [Message Queue](#messagequeue)
     8. [Job Queue](#jobqueue)
 
-## Objective <a name="objective"></a>
+## Objective <a name="objective"></a> [back to top](#top)
 You will learn Node.js fundamentals including modules such as path, url, fs, events. 
 Additionally you'll create an HTTP server from scratch without Express and deploy it to Heroku.
 
@@ -95,7 +95,7 @@ Firing a callback
 Events run in the loop 
 triggers 
 
-### Node Package Manager NPM <a name="npm"></a>
+### Node Package Manager NPM <a name="npm"></a> [back to top](#top)
 
 NPM installs third party packages as dependencies: frameworks, libraries, other tools
 
@@ -142,7 +142,7 @@ The loop gives priority to the call stack, and it first processes everything it 
 We don't have to wait for functions like setTimeout, fetch or other things to do their own work, because they are provided by the browser, and they live on their own threads. 
 For example, if you set the setTimeout timeout to 2 seconds, you don't have to wait 2 seconds - the wait happens elsewhere.
 
-### Job Queue <a name="jobqueue"></a>
+### Job Queue <a name="jobqueue"></a> [back to top](#top)
 
 ECMAScript 2015 introduced the concept of the Job Queue, which is used by Promises (also introduced in ES6/ES2015). It's a way to execute the result of an async function as soon as possible, rather than being put at the end of the call stack.
 
