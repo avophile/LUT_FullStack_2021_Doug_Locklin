@@ -64,7 +64,7 @@ It runs on your machine as a service or a runtime, not in the browser.
 * Asynchronous programming and callbacks
 * Timers
 * Promises
-* Async and Await
+* [Async and Await](https://nodejs.dev/learn/modern-asynchronous-javascript-with-async-and-await)
 * Closures
 * The Event Loop
 
@@ -123,7 +123,7 @@ Notes from the demo in the video are included in the Node_Crash_Course folder.
 
 Note: to make demo work we have to revert to Node v. 12
 
-### Event loop <a name="eventloop"></a>
+### [Event loop](https://nodejs.dev/learn/the-nodejs-event-loop) <a name="eventloop"></a>
 
 In general, in most browsers there is an event loop for every browser tab, to make every process isolated and avoid a web page with infinite loops or heavy processing to block your entire browser.
 
