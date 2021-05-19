@@ -20,7 +20,7 @@
 ## Objective <a name="objective"></a> 
 [back to top](#top)
 
-You will learn Node.js fundamentals including modules such as [Path](https://nodejs.org/dist/latest-v14.x/docs/api/path.html), [URL](https://nodejs.org/dist/latest-v14.x/docs/api/url.html), [File System](https://nodejs.org/dist/latest-v14.x/docs/api/fs.html)(fs), and [events](https://nodejs.org/dist/latest-v14.x/docs/api/events.html). 
+We will follow Traversy Media's Node.js Crash Course [video](https://www.youtube.com/watch?v=fBNz5xF-Kx4) and learn Node.js fundamentals including modules such as [Path](https://nodejs.org/dist/latest-v14.x/docs/api/path.html), [URL](https://nodejs.org/dist/latest-v14.x/docs/api/url.html), [File System](https://nodejs.org/dist/latest-v14.x/docs/api/fs.html)(fs), and [events](https://nodejs.org/dist/latest-v14.x/docs/api/events.html). 
 Additionally you'll create an HTTP server from scratch without Express and deploy it to [Heroku](https://www.heroku.com/).
 
 Node.js is a JavaScript runtime environment written in C++.
