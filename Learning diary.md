@@ -98,7 +98,7 @@ Notes from the demo in the video are included in the Node_Crash_Course folder.
 
 Note: to make demo work we have to revert to Node v. 12
 
-**Event loop**
+### Event loop
 
 In general, in most browsers there is an event loop for every browser tab, to make every process isolated and avoid a web page with infinite loops or heavy processing to block your entire browser.
 
@@ -106,7 +106,7 @@ The environment manages multiple concurrent event loops, to handle API calls for
 
 You mainly need to be concerned that your code will run on a single event loop, and write code with this thing in mind to avoid blocking it.
 
-**The call stack**
+### The call stack
 
 The call stack is a LIFO (Last In, First Out) stack.
 
@@ -114,25 +114,13 @@ The event loop continuously checks the call stack to see if there's any function
 
 While doing so, it adds any function call it finds to the call stack and executes each one in order.
 
-
-
-
-
-
-
-
-
-
-
-
-
-**Asynchronous**
+### Asynchronous
 
 How to defer a function until the stack is clear:
 
 The use case of setTimeout(() => {}, 0) is to call a function, but execute it once every other function in the code has executed.
 
-The Message Queue
+### The Message Queue
 When setTimeout() is called, the Browser or Node.js starts the timer. Once the timer expires, in this case immediately as we put 0 as the timeout, the callback function is put in the Message Queue.
 
 The Message Queue is also where user-initiated events like click or keyboard events, or fetch responses are queued before your code has the opportunity to react to them. Or also DOM events like onLoad.
@@ -141,6 +129,8 @@ The loop gives priority to the call stack, and it first processes everything it 
 
 We don't have to wait for functions like setTimeout, fetch or other things to do their own work, because they are provided by the browser, and they live on their own threads. 
 For example, if you set the setTimeout timeout to 2 seconds, you don't have to wait 2 seconds - the wait happens elsewhere.
+
+### Job Queue
 
 ECMAScript 2015 introduced the concept of the Job Queue, which is used by Promises (also introduced in ES6/ES2015). It's a way to execute the result of an async function as soon as possible, rather than being put at the end of the call stack.
 
