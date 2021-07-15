@@ -7,3 +7,5 @@ class Logger extends EventEmitter{
   this.emit('message', { id: uuid.v4(), msg});
   }
 }
+
+module.exports = Logger;
