@@ -1,10 +1,17 @@
-const Logger = require('./logger');
+const http = require('http');
+const http = require('path');
+const http = require('fs');
 
-const logger = new Logger();
+const server = http.createServer((req, res) => {
+  console.log(req.url);
+  if (req.url === '/') {
+    res.end('<h1>Home</h1>');
+  }
+ 
+});
 
-logger.on('message', (data) => console.log('Called Listener: ', data));
+const PORT = process.env.PORT || 5000;  // checks if port number is available as an environment variable or then defaults to 5000
 
-logger.log('Is anyone listening?');
-logger.log('I am.');
+server.listen(PORT, () => console.log(`Server running on port ${PORT}`));)
 
 
