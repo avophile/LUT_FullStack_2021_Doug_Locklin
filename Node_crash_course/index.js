@@ -1,4 +1,9 @@
-const person = require('./person');
-//babel is required to run latest ES6 featrue in Node.js
+const Logger = require('./logger');
 
-console.log(person)
+const logger = new Logger();
+
+logger.on('message', (data) => console.log('Called Listener: ', data));
+
+logger.log('Is anyone listening?');
+
+
