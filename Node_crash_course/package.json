@@ -4,9 +4,8 @@
   "description": "Coursework from the video",
   "main": "index.js",
   "scripts": {
-    //"test": "echo \"Error: no test specified\" && exit 1"
     "start":"node index",
-    "dev": "nodemon index" //nodemon watches changes and updates without needing to manually restarting the server
+    "dev": "nodemon index" 
   },
   "repository": {
     "type": "git",
