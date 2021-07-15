@@ -1,4 +1,4 @@
-const EventEmitter = required(events);
+const EventEmitter = required('events');
 
 //Create class
 class MyEmitter extends EventEmitter {}
