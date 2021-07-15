@@ -5,5 +5,6 @@ const logger = new Logger();
 logger.on('message', (data) => console.log('Called Listener: ', data));
 
 logger.log('Is anyone listening?');
+logger.log('I am.');
 
 
