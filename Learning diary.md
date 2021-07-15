@@ -125,6 +125,7 @@ Allows JavaScript to run on the server.
 - Good for real time services, CRUD apps, tools and utilities
 
 **How it works:**
+    ![Node Event Loop](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
 - Event or process triggers an event or process
 - Firing a callback
 - Events run in the loop 
