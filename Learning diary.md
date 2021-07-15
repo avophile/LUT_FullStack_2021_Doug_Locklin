@@ -1,3 +1,17 @@
+# Lappeenrannan teknillinen yliopisto
+# School of Business and Management
+
+## Sofware Development Skills
+
+### Douglas Locklin, <Insert student number here>
+
+# LEARNING DIARY, Full-Stack 2020-21 MODULE
+    
+# Course goal
+This course's stated aims are to give me "an edge in the jobmarket by providing tools for creating unique projects" and to help me to "find my passion as a software developer." These "official" goals are less relevant for me, a student of non-traditional age. I want to be an self-employed entrepreneur and my passion springs from the solutions I want to create. Learning these technologies is merely a stepping stone for prototyping an app that ultimately will be developed by a team led by a "real" CTO.
+    
+I have concerns about the fact that there are older videos associated with ths course, and the video lessons sometimes refer to older software versions. The [example app code](https://github.com/avophile/meanauthapp) has not been updated since 2018.
+
 # Notes on Node.js Crash course segment
 
 # Table of contents <a name="top"></a>
