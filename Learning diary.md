@@ -21,7 +21,8 @@ I have concerns about the fact that there are older videos associated with ths c
     2. [Suggested JavaScript precursors in Node docs](#nodedocsprecursors)
     3. [Asyncronous concepts](#asynchronous)
 3. [Why Use Node?](#why)
-4. [Node.js features](#features)
+4. [What's Node Used For?](#why)
+5. [Node.js features](#features)
     1. [Runtime vs. framework](#runvsframe)
     2. [Non-blocking I/O](#nonblock)
     3. [Node Package Manager](#npm)
@@ -89,6 +90,14 @@ It runs on your machine as a service or a runtime, not in the browser.
 - Event driven, runs on a single thread (loop?), has a non-blocking I/O model
 - Popular with startups 
 - Same language on both front and back ends when used with JavaScript frameworks like React Vue Angular
+    
+## What types of projects are best use cases for Node.js? <a name="what"></a>
+[back to top](#top)
+    
+* REST API & Microservices
+* Real Time Services (Chat, live updates)
+* CRUD apps (Blogs, shopping carts, social networks)
+* Tools and Utilities
 
 ## Node.js features <a name="features"></a>
 [back to top](#top)
