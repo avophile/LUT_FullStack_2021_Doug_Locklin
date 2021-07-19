@@ -125,7 +125,7 @@ Allows JavaScript to run on the server.
 - Good for real time services, CRUD apps, tools and utilities
 
 **How it works:**
-![Node Event Loop](https://github.com/avophile/LUT_FullStack_2021_Doug_Locklin/blob/main/Resources/Node.js-Event-Loop-1.png?raw=true)
+
 - Event or process triggers an event or process
 - Firing a callback
 - Events run in the loop 
@@ -150,6 +150,9 @@ Notes from the demo in the video are included in the Node_Crash_Course folder.
 See also: [Yarn](https://yarnpkg.com/getting-started)
 
 ### [Event loop](https://nodejs.dev/learn/the-nodejs-event-loop) <a name="eventloop"></a>
+    
+![Node Event Loop](https://github.com/avophile/LUT_FullStack_2021_Doug_Locklin/blob/main/Resources/Node.js-Event-Loop-1.png?raw=true)
+    Image retrieved from https://www.tutorialandexample.com/node-js-event-loop/
 
 In general, in most browsers there is an event loop for every browser tab, to make every process isolated and avoid a web page with infinite loops or heavy processing to block your entire browser.
 
