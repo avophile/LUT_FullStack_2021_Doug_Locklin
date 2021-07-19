@@ -201,7 +201,7 @@ Promises that resolve before the current function ends will be executed right af
 
 # Table of contents <a name="top2"></a>
 1. [Objective](#objective2)
-2. [Precursors](#precursors2)
+2. [What is MongoDB?](#mongodb)
     1. [MongoDB Crash Course suggested precursors](#nodecrashprecursors2)
     2. [Suggested JavaScript precursors in MongoDB docs](#nodedocsprecursors2)
 3. [Why Use MongoDB?](#why2)
@@ -212,14 +212,14 @@ Promises that resolve before the current function ends will be executed right af
 
 
 ## Objective <a name="objective"></a> 
-[back to top](#top2)
+[back to contents](#top2)
 
 We will follow Traversy Media's MongoDB Crash Course [video](https://www.youtube.com/watch?v=-56x56UppqQ) and learn MongoDB fundamentals including [xxxx](https://xxxx), [xxxx](https://xxxx),
 
 
 
-## Precursors <a name="precursors2"></a>
-[back to top](#top2)
+## What is MongoDB? <a name="#mongodb"></a>
+[back to contents](#top2)
 
 ### MongoDB Crash Course suggested precursors <a name="nodecrashprecursors2"></a>
 [back to top](#top2)
