@@ -202,8 +202,8 @@ Promises that resolve before the current function ends will be executed right af
 # Table of contents <a name="top2"></a>
 1. [Objective](#objective2)
 2. [Precursors](#precursors2)
-    1. [Node.js Crash Course suggested precursors](#nodecrashprecursors2)
-    2. [Suggested JavaScript precursors in Node docs](#nodedocsprecursors2)
+    1. [MongoDB Crash Course suggested precursors](#nodecrashprecursors2)
+    2. [Suggested JavaScript precursors in MongoDB docs](#nodedocsprecursors2)
 3. [Why Use MongoDB?](#why2)
 4. [What's MongoDB Used For?](#why2)
 5. [MongoDB features](#features2)
