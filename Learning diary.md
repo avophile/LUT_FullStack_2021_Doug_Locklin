@@ -204,20 +204,18 @@ Promises that resolve before the current function ends will be executed right af
 2. [What is MongoDB?](#mongodb)
     1. [MongoDB Crash Course suggested precursors](#nodecrashprecursors2)
     2. [Suggested JavaScript precursors in MongoDB docs](#nodedocsprecursors2)
-3. [Why Use MongoDB?](#why2)
-4. [What's MongoDB Used For?](#why2)
-5. [MongoDB features](#features2)
-    1. [Runtime vs. framework](#runvsframe)
-    2. [Non-blocking I/O](#nonblock)
+3. [Advantages of MongoDB](#advantages2)
 
 
-## Objective <a name="objective"></a> 
+
+## Objective <a name="objective2"></a> 
 [back to contents](#top2)
 
 We will follow Traversy Media's MongoDB Crash Course [video](https://www.youtube.com/watch?v=-56x56UppqQ) and learn MongoDB fundamentals including [xxxx](https://xxxx), [xxxx](https://xxxx),
 
 ## What is MongoDB? <a name="#mongodb"></a>
 [back to contents](#top2)
+    
 MongoDB is a NoSQL (Not only SQL) database. Databases like SQL, Oracle, etc. are relational databases with strict data models. MongoDB stores data is collections of documents in BSON which that resembles JSON objects key:value pairs. Every document has a uique object ID.
     
 ## Advantages of MongoDB <a name="advantages2"></a>
