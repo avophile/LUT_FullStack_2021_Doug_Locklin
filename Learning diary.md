@@ -195,7 +195,8 @@ ECMAScript 2015 introduced the concept of the Job Queue, which is used by Promis
 
 Promises that resolve before the current function ends will be executed right after the current function.
 
- 
+
+    
 # Notes on MongoDB Crash course [video](https://www.youtube.com/watch?v=-56x56UppqQ) segment
 
 # Table of contents <a name="top2"></a>
