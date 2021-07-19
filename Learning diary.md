@@ -211,21 +211,17 @@ Promises that resolve before the current function ends will be executed right af
 
 
 ## Objective <a name="objective"></a> 
-[back to top](#top)
+[back to top](#top2)
 
 We will follow Traversy Media's MongoDB Crash Course [video](https://www.youtube.com/watch?v=-56x56UppqQ) and learn MongoDB fundamentals including [xxxx](https://xxxx), [xxxx](https://xxxx),
 
-Node.js is a JavaScript runtime environment written in C++.
 
-Q: Do I need to know C++ to be an expert in Node.js? 
-
-It runs on your machine as a service or a runtime, not in the browser. 
 
 ## Precursors <a name="precursors2"></a>
-[back to top](#top)
+[back to top](#top2)
 
 ### MongoDB Crash Course suggested precursors <a name="nodecrashprecursors2"></a>
-[back to top](#top)
+[back to top](#top2)
 
    
 
