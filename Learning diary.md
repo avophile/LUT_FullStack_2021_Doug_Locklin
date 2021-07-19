@@ -230,6 +230,7 @@ It runs on your machine as a service or a runtime, not in the browser.
    
 
 # MongoDB Cheat Sheet
+Retrieved from: https://gist.github.com/bradtraversy/f407d642bdc3b31681bc7e56d95485b6
 
 ## Show All Databases
 
