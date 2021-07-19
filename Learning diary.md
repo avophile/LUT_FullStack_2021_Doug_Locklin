@@ -191,3 +191,299 @@ For example, if you set the setTimeout timeout to 2 seconds, you don't have to w
 ECMAScript 2015 introduced the concept of the Job Queue, which is used by Promises (also introduced in ES6/ES2015). It's a way to execute the result of an async function as soon as possible, rather than being put at the end of the call stack.
 
 Promises that resolve before the current function ends will be executed right after the current function.
+
+ 
+# Notes on MongoDB Crash course [video](https://www.youtube.com/watch?v=-56x56UppqQ) segment
+
+# Table of contents <a name="top2"></a>
+1. [Objective](#objective2)
+2. [Precursors](#precursors2)
+    1. [Node.js Crash Course suggested precursors](#nodecrashprecursors2)
+    2. [Suggested JavaScript precursors in Node docs](#nodedocsprecursors2)
+3. [Why Use MongoDB?](#why2)
+4. [What's MongoDB Used For?](#why2)
+5. [MongoDB features](#features2)
+    1. [Runtime vs. framework](#runvsframe)
+    2. [Non-blocking I/O](#nonblock)
+
+
+## Objective <a name="objective"></a> 
+[back to top](#top)
+
+We will follow Traversy Media's MongoDB Crash Course [video](https://www.youtube.com/watch?v=-56x56UppqQ) and learn MongoDB fundamentals including [xxxx](https://xxxx), [xxxx](https://xxxx),
+
+Node.js is a JavaScript runtime environment written in C++.
+
+Q: Do I need to know C++ to be an expert in Node.js? 
+
+It runs on your machine as a service or a runtime, not in the browser. 
+
+## Precursors <a name="precursors2"></a>
+[back to top](#top)
+
+### MongoDB Crash Course suggested precursors <a name="nodecrashprecursors2"></a>
+[back to top](#top)
+
+   
+
+# MongoDB Cheat Sheet
+
+## Show All Databases
+
+```
+show dbs
+```
+
+## Show Current Database
+
+```
+db
+```
+
+## Create Or Switch Database
+
+```
+use acme
+```
+
+## Drop
+
+```
+db.dropDatabase()
+```
+
+## Create Collection
+
+```
+db.createCollection('posts')
+```
+
+## Show Collections
+
+```
+show collections
+```
+
+## Insert Row
+
+```
+db.posts.insert({
+  title: 'Post One',
+  body: 'Body of post one',
+  category: 'News',
+  tags: ['news', 'events'],
+  user: {
+    name: 'John Doe',
+    status: 'author'
+  },
+  date: Date()
+})
+```
+
+## Insert Multiple Rows
+
+```
+db.posts.insertMany([
+  {
+    title: 'Post Two',
+    body: 'Body of post two',
+    category: 'Technology',
+    date: Date()
+  },
+  {
+    title: 'Post Three',
+    body: 'Body of post three',
+    category: 'News',
+    date: Date()
+  },
+  {
+    title: 'Post Four',
+    body: 'Body of post three',
+    category: 'Entertainment',
+    date: Date()
+  }
+])
+```
+
+## Get All Rows
+
+```
+db.posts.find()
+```
+
+## Get All Rows Formatted
+
+```
+db.posts.find().pretty()
+```
+
+## Find Rows
+
+```
+db.posts.find({ category: 'News' })
+```
+
+## Sort Rows
+
+```
+# asc
+db.posts.find().sort({ title: 1 }).pretty()
+# desc
+db.posts.find().sort({ title: -1 }).pretty()
+```
+
+## Count Rows
+
+```
+db.posts.find().count()
+db.posts.find({ category: 'news' }).count()
+```
+
+## Limit Rows
+
+```
+db.posts.find().limit(2).pretty()
+```
+
+## Chaining
+
+```
+db.posts.find().limit(2).sort({ title: 1 }).pretty()
+```
+
+## Foreach
+
+```
+db.posts.find().forEach(function(doc) {
+  print("Blog Post: " + doc.title)
+})
+```
+
+## Find One Row
+
+```
+db.posts.findOne({ category: 'News' })
+```
+
+## Find Specific Fields
+
+```
+db.posts.find({ title: 'Post One' }, {
+  title: 1,
+  author: 1
+})
+```
+
+## Update Row
+
+```
+db.posts.update({ title: 'Post Two' },
+{
+  title: 'Post Two',
+  body: 'New body for post 2',
+  date: Date()
+},
+{
+  upsert: true
+})
+```
+
+## Update Specific Field
+
+```
+db.posts.update({ title: 'Post Two' },
+{
+  $set: {
+    body: 'Body for post 2',
+    category: 'Technology'
+  }
+})
+```
+
+## Increment Field (\$inc)
+
+```
+db.posts.update({ title: 'Post Two' },
+{
+  $inc: {
+    likes: 5
+  }
+})
+```
+
+## Rename Field
+
+```
+db.posts.update({ title: 'Post Two' },
+{
+  $rename: {
+    likes: 'views'
+  }
+})
+```
+
+## Delete Row
+
+```
+db.posts.remove({ title: 'Post Four' })
+```
+
+## Sub-Documents
+
+```
+db.posts.update({ title: 'Post One' },
+{
+  $set: {
+    comments: [
+      {
+        body: 'Comment One',
+        user: 'Mary Williams',
+        date: Date()
+      },
+      {
+        body: 'Comment Two',
+        user: 'Harry White',
+        date: Date()
+      }
+    ]
+  }
+})
+```
+
+## Find By Element in Array (\$elemMatch)
+
+```
+db.posts.find({
+  comments: {
+     $elemMatch: {
+       user: 'Mary Williams'
+       }
+    }
+  }
+)
+```
+
+## Add Index
+
+```
+db.posts.createIndex({ title: 'text' })
+```
+
+## Text Search
+
+```
+db.posts.find({
+  $text: {
+    $search: "\"Post O\""
+    }
+})
+```
+
+## Greater & Less Than
+
+```
+db.posts.find({ views: { $gt: 2 } })
+db.posts.find({ views: { $gte: 7 } })
+db.posts.find({ views: { $lt: 7 } })
+db.posts.find({ views: { $lte: 7 } })
+```
