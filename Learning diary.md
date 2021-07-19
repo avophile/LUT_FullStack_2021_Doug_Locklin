@@ -216,16 +216,26 @@ Promises that resolve before the current function ends will be executed right af
 
 We will follow Traversy Media's MongoDB Crash Course [video](https://www.youtube.com/watch?v=-56x56UppqQ) and learn MongoDB fundamentals including [xxxx](https://xxxx), [xxxx](https://xxxx),
 
-
-
 ## What is MongoDB? <a name="#mongodb"></a>
 [back to contents](#top2)
-
-### MongoDB Crash Course suggested precursors <a name="nodecrashprecursors2"></a>
+MongoDB is a NoSQL (Not only SQL) database. Databases like SQL, Oracle, etc. are relational databases with strict data models. MongoDB stores data is collections of documents in BSON which that resembles JSON objects key:value pairs. Every document has a uique object ID.
+    
+## Advantages of MongoDB <a name="advantages2"></a>
 [back to top](#top2)
 
+    -Scalable
+    -built in replication an sharding
+    -performant, fast
+    -flexible data structure
    
+## MongoDB tools<a name="tools2"></a>
+[back to top](#top2)
 
+    -Mongo Shell
+    -Compass
+    -Atlas
+    -xxxxx
+    
 # MongoDB Cheat Sheet
 Retrieved from: https://gist.github.com/bradtraversy/f407d642bdc3b31681bc7e56d95485b6
 
