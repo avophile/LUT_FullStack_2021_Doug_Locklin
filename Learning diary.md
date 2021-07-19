@@ -216,7 +216,7 @@ We will follow Traversy Media's MongoDB Crash Course [video](https://www.youtube
 ## What is MongoDB? <a name="#mongodb"></a>
 [back to contents](#top2)
     
-MongoDB is a NoSQL (Not only SQL) database. Databases like SQL, Oracle, etc. are relational databases with strict data models. MongoDB stores data is collections of documents in BSON which that resembles JSON objects key:value pairs. Every document has a uique object ID.
+MongoDB is a NoSQL (Not only SQL) database. Databases like SQL, Oracle, etc. are relational databases with strict data models. MongoDB stores data in collections of documents in BSON which that resembles JSON objects key:value pairs. Every document has a unique object ID.
     
 ## Advantages of MongoDB <a name="advantages2"></a>
 [back to top](#top2)
