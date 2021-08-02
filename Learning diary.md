@@ -496,3 +496,9 @@ db.posts.find({ views: { $gte: 7 } })
 db.posts.find({ views: { $lt: 7 } })
 db.posts.find({ views: { $lte: 7 } })
 ```
+
+# At this point I broke from the course material to delve further into databases and data architecture. After reviewing many different frameworks, API management tools and PaaS offerings, I decided to attempt to implement a variety of databases: a normal MongoDB instance, plus a graph database with both databases managed through [ArongoDB](https://cloud.arangodb.com/home)'s query language: [AQL](https://www.arangodb.com/docs/stable/aql/).
+    
+ArongoDB is native multi-model database, supporting key/value, document and graph models. ArangoDB of course offers a cloud-based service for ArangoDB called [OASIS](https://cloud.arangodb.com/home), with fully hosted, managed, & monitored cluster deployments of any size, with enterprise-grade security.
+    
+During this process, I installed [nvs]() to facilitate switching between versions of node. Of course, since computers, I had to [uninstall](https://stackoverflow.com/questions/20711240/how-to-completely-remove-node-js-from-windows) all previous versions of Node and their attendent files, [adjust](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_execution_policies?view=powershell-7.1) my execution policies, then install [chocolatey](https://chocolatey.org/) to install nvs.
