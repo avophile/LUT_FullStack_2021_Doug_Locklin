@@ -499,7 +499,7 @@ db.posts.find({ views: { $lte: 7 } })
 
 ## At this point I broke from the course material to delve further into databases and data architecture. 
 
-    After reviewing many different frameworks, API management tools and PaaS offerings, I decided to attempt to implement a variety of databases: a normal MongoDB instance, plus a graph database with both databases managed through [ArongoDB](https://cloud.arangodb.com/home)'s query language: [AQL](https://www.arangodb.com/docs/stable/aql/).
+After reviewing many different frameworks, API management tools and PaaS offerings, I decided to attempt to implement a variety of databases: a normal MongoDB instance, plus a graph database with both databases managed through [ArongoDB](https://cloud.arangodb.com/home)'s query language: [AQL](https://www.arangodb.com/docs/stable/aql/).
     
 ArongoDB is native multi-model database, supporting key/value, document and graph models. ArangoDB of course offers a cloud-based service for ArangoDB called [OASIS](https://cloud.arangodb.com/home), with fully hosted, managed, & monitored cluster deployments of any size, with enterprise-grade security.
     
