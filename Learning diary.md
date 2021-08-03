@@ -504,3 +504,146 @@ After reviewing many different frameworks, API management tools and PaaS offerin
 ArongoDB is native multi-model database, supporting key/value, document and graph models. ArangoDB of course offers a cloud-based service for ArangoDB called [OASIS](https://cloud.arangodb.com/home), with fully hosted, managed, & monitored cluster deployments of any size, with enterprise-grade security.
     
 During this process, I installed [nvs]() to facilitate switching between versions of node. Of course, since computers, I had to [uninstall](https://stackoverflow.com/questions/20711240/how-to-completely-remove-node-js-from-windows) all previous versions of Node and their attendent files, [adjust](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_execution_policies?view=powershell-7.1) my execution policies, then install [chocolatey](https://chocolatey.org/) to install nvs.
+    
+## nvs
+    
+To add the latest version of node:
+```
+$ nvs add latest
+```
+Or to add the latest LTS version of node:
+```
+$ nvs add lts
+```
+Then run the `nvs use` command to add a version of node to your PATH for the current shell:
+```
+$ nvs use lts
+PATH += ~/.nvs/node/6.9.1/x64
+```
+To add it to PATH permanently, use `nvs link`:
+```
+$ nvs link lts
+```
+
+## Command reference
+Command | Description
+------- | -----------
+`nvs help <command>`             | Get detailed help for a command
+`nvs install`                    | Initialize your profile for using NVS
+`nvs uninstall`                  | Remove NVS from profile and environment
+`nvs --version`                  | Display the NVS tool version
+`nvs add [version]`              | Download and extract a node version
+`nvs rm <version>`               | Remove a node version
+`nvs migrate <fromver> [tover]`  | Migrate global modules
+`nvs upgrade [fromver]`          | Upgrade to latest patch of major version
+`nvs use [version]`              | Use a node version in the current shell
+`nvs auto [on/off]`              | Automatically switch based on cwd
+`nvs run <ver> <js> [args...]`   | Run a script using a node version
+`nvs exec <ver> <exe> [args...]` | Run an executable using a node version
+`nvs which [version]`            | Show the path to a node version binary
+`nvs ls [filter]`                | List local node versions
+`nvs ls-remote [filter]`         | List node versions available to download
+`nvs link [version]`             | Link a version as the default
+`nvs unlink [version]`           | Remove links to a default version
+`nvs alias [name] [value]`       | Set or recall aliases for versions
+`nvs remote [name] [value]`      | Set or recall download base URIs
+
+A version or filter consists of a complete or partial semantic version number or version label  ("lts", "latest", "Argon", etc.), optionally preceded by a remote name, optionally followed by an architecture, separated by slashes. Examples: "lts", "4.6.0", "6/x86", "node/6.7/x64".
+
+[Refer to the docs](./doc) for more details about each command.
+
+## Interactive menus
+When invoked with no parameters, `nvs` displays an interactive menu for switching and downloading node versions.
+
+![nvs menu](https://github.com/jasongin/nvs/releases/download/v0.8.0/nvs-menu.gif)
+
+*NVS uses [**console-menu**](https://github.com/jasongin/console-menu), a module originally written for this project then published separately.*
+
+## VS Code support
+Visual Studio Code can use NVS to select a node version to use when launching or debugging. In `launch.json` (in the folder `.vscode` located on the project's root folder), add a `"runtimeArgs"` attribute with an NVS version string and a `"runtimeExecutable"` attribute that refers to `nvs.cmd` (Windows) or `nvs` (Mac, Linux). (You may need to specify an absolute path such as `"${env:HOME}/.nvs/nvs"` if NVS is not in VS Code's PATH.)
+
+Example: Configure `launch.json` so VS Code uses NVS to launch node version 6.10:
+```json
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch Program",
+      "program": "${file}",
+      "args": [ ],
+      "runtimeArgs": [ "6.10" ],
+      "windows": { "runtimeExecutable": "nvs.cmd" },
+      "osx": { "runtimeExecutable": "nvs" },
+      "linux": { "runtimeExecutable": "nvs" }
+    },
+  ]
+```
+
+Or, remove the version string from `"runtimeArgs"` to get the version from a `.node-version` file in the project directory. For more details, see the [NVS VS Code documentation](doc/VSCODE.md) or run `nvs help vscode`.
+
+## Configurable remotes
+The `nvs remote` command allows configuration of multiple named download locations. NVS manages versions from different remote locations separately, so there is no risk of version collisions. By default there is a single remote pointing to Node.js official releases:
+```
+$ nvs remote
+default  node
+node     https://nodejs.org/dist/
+```
+This makes it possible to get builds from other sources. The following command sequence adds a remote entry for nightly builds, lists nightly builds, and adds a build:
+```
+$ nvs remote add nightly https://nodejs.org/download/nightly/
+$ nvs lsr nightly/13
+nightly/13.1.1-nightly20191120c7c566023f
+...
+$ nvs add nightly/13
+```
+
+Other remote sources are supported, for example:
+```
+nvs remote add iojs https://iojs.org/dist/
+nvs remote add chakracore https://nodejs.org/download/chakracore-release/
+```
+
+## Aliases
+An alias refers to a combination of a remote name and a semantic version. (Processor architectures are not aliased.) When setting an alias, the remote name may be omitted, in which case the alias refers to the default remote. An alias may be used in place of a version string in any of the other commands.
+```
+$ nvs alias myalias 6.7.0
+$ nvs alias
+myalias default/6.7.0
+$ nvs run myalias --version
+v6.7.0
+$ nvs which myalias
+~/.nvs/node/6.7.0/x64/bin/node
+$ nvs which myalias/32
+~/.nvs/node/6.7.0/x86/bin/node
+```
+[An alias may also refer to a local directory](doc/ALIAS.md#aliasing-directories), enabling NVS to switch to a local private build of node.
+
+## Automatic switching per directory
+In either Bash or PowerShell, NVS can automatically switch the node version in the current shell as you change directories. This function is disabled by default; to enable it run `nvs auto on`. Afterward, whenever you `cd` or `pushd` under a directory containing a `.node-version` or an [`.nvmrc`](https://github.com/nvm-sh/nvm#nvmrc) file then NVS will automatically switch the node version accordingly, downloading a new version if necessary. When you `cd` out to a directory with no `.node-version` or `.nvmrc` file anywhere above it, then the default (linked) version is restored, if any.
+```
+~$ nvs link 6.9.1
+~/.nvs/default -> ~/.nvs/node/6.9.1/x64
+~$ nvs use
+PATH += ~/.nvs/default/bin
+~$ nvs auto on
+~$ cd myproject
+PATH -= ~/.nvs/default/bin
+PATH += ~/.nvs/node/4.6.1/x64/bin
+~/myproject$ cd ..
+PATH -= ~/.nvs/node/4.6.1/x64/bin
+PATH += ~/.nvs/default/bin
+```
+*This feature is not available in Windows Command Prompt. Use PowerShell instead.*
+
+## Manual switching using `.node-version`
+If your shell isn't compatible with automatic switching or you'd prefer to switch manually but still take advantage of any `.node-version` or `.nvmrc` files, you can run `nvs use` with the version `auto` or just run `nvs auto`.
+
+```
+$ nvs use auto
+```
+
+is equivalent to
+
+```
+$ nvs auto
+```
